@@ -1,16 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div
+    class="m-0 p-0 min-h-screen flex items-center justify-center bg-gray-100 text-center"
+  >
+    <div class="max-w-md w-full space-y-8">
+      <div class="mb-12">
+        <h2 class="mt-6 text-center text-4xl font-extrabold text-gray-900 border-b border-gray-300 pb-4">
+          Sign Up
+        </h2>
+      </div>
+
+      <Signupform />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Signupform from "./components/Signupform.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    Signupform,
+  },
 }
 </script>
 
@@ -19,8 +30,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
